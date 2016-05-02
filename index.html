@@ -1,1 +1,94 @@
-Hello World
+<html>
+<head>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="defaultStyle.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<link rel='shortcut icon' href='Sock Company!-fav.ico' type='image/x-icon'/ >
+  <title>Sock Company!</title>
+
+</head>
+
+<body>
+<!-- NAV BAR Beginning -->
+
+<div id="navBar">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Sock Company!</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li id="Home"><a id="homeButton" href="#">Home<span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Socks! <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a id="tallSockButton" href="#">Tall Socks</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a id="shortSockButton" href="#">Short Socks</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a id="allSockButton" href="#">ALL THE SOCKS!!!</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input id="searchInput" type="text" class="form-control" placeholder="Looking for socks?">
+        </div>
+        <button id="searchButton" type="submit" class="btn btn-default">Find Socks!</button>
+      </form>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
+<!-- Nav Bar Ends! -->
+
+<!--Content Area Begins (Absolutely do not delete. Website will implode)-->
+<div class="main">
+<div class="container">
+<div class="row">
+<div class="jumbotron">
+  <img src="Sock Company!-logo (1).png" class="img-responsive center-block">
+<div id="homeText" class="text-center">
+  <p>Welcome to Sock Company!</p>
+  <p>Want socks? We've got socks! Want anything else - we don't have it!</p>
+  <p>Use the buttons in the top left to find yourself some sweet socks!</p>
+</div>
+</div>
+</div></div></div>
+<!--Content Area Ends (Absolutely do not delete. Website will implode)-->
+
+<!-- Footer begins -->
+  <footer class="footer">
+      <div class="container">
+        <div class="row">
+  <div class="col-md-4">Call Us @ (555)555-5555</div>
+  <div class="col-md-4"><p class="text-muted">Thank you for browsing Sock Company!</p></div>
+  <div class="col-md-4"><a href= "mailto:contactus@sockcompany.com?Subject=Sock%20Purchase">Click here to email Sock Company!</a></div>
+</div>
+      </div>
+    </footer>
+<!--Footer Ends -->
+
+<script src="./sockCompanyJS.js"></script>
+<!--Sock Company! is a faux website used to demonstrate Javascript and HTML skills as part of a project. All images are from the company Living Royal and socks may be purchased from their website -->
+</body>
+</html>
