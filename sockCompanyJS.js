@@ -14,11 +14,10 @@ function addToPage(product) {
     i++;
   }
 }
+
 // addToPage Function ENDS
 
-
-// Tall Galaxy Food Cat Socks START
-var tallGalaxyFoodCat = {
+var tallSocksArray = [{
   html_id: "tallGalaxyFoodCat",
   html_class: "tallsock",
   name: "Tall Galaxy Food Cat Socks",
@@ -26,12 +25,7 @@ var tallGalaxyFoodCat = {
   price: 15.00,
   picture_url: "http://cdn.shopify.com/s/files/1/0205/2636/products/galaxy-kitty-fast-food-knee-high-socks-2_1024x1024.jpg?v=1452551292",
   selling_points: ["Height: Tall", "Material: 100% Polyester", "Print/Color: Features amazing cats eating fastfood in space!"],
-};
-
-// Tall Galaxy Food Cat Socks END
-
-// Tall Bacon Socks START
-var tallBacon = {
+}, {
   html_id: "tallBacon",
   html_class: "tallsock",
   name: "Tall Bacon Socks",
@@ -39,13 +33,7 @@ var tallBacon = {
   price: 15.00,
   picture_url: "http://cdn.shopify.com/s/files/1/0205/2636/products/bacon-knee-high-socks-3_1024x1024.jpg?v=1406667275",
   selling_points: ["Height: Tall", "Material: 100% Polyester", "Print/Color: It's bacon! Need we say more?"]
-};
-
-
-// Tall Bacon Socks END
-
-// Tall Pink Emoji Socks START
-var tallPinkEmoji = {
+}, {
   html_id: "tallPinkEmoji",
   html_class: "tallsock",
   name: "Tall Pink Emoji Socks",
@@ -53,13 +41,19 @@ var tallPinkEmoji = {
   price: 15.00,
   picture_url: "http://cdn.shopify.com/s/files/1/0205/2636/products/girly-emoji-knee-high-socks-3_1024x1024.jpg?v=1452536560",
   selling_points: ["Height: Tall", "Material: 100% Polyester", "Print/Color: Like pink? Like emojis? Like cats? You'll like these socks."]
-};
+},
+ {
+  html_id: "tallHappyBreakfastSock",
+  html_class: "tallsock",
+  name: "Tall Happy Breakfast Socks",
+  category: "Tall Socks",
+  price: 15.00,
+  picture_url: "http://cdn.shopify.com/s/files/1/0205/2636/products/breakfast-smiley-knee-high-socks-3_1024x1024.jpg?v=1452548414",
+  selling_points: ["Height: Tall", "Material: 100% Polyester", "Print/Color: Look breakfast is happy to see you too!"]
+}
+];
 
-// Tall Pink Emoji Socks END
-
-
-// Short Milk and Cookies Socks START
-var shortMilkAndCookies = {
+var shortSocksArray = [{
   html_id: "shortMilkAndCookies",
   html_class: "shortsock",
   name: "Short Milk and Cookies Socks",
@@ -67,12 +61,7 @@ var shortMilkAndCookies = {
   price: 8.00,
   picture_url: "http://cdn.shopify.com/s/files/1/0205/2636/products/milk-and-cookies-ankle-socks-1_1024x1024.jpg?v=1421693418",
   selling_points: ["Height: Short", "Material: 100% Polyester", "Print/Color: Features a milk and cookies print - suitable even for the lactose intolerant among us!"],
-};
-
-// Short Milk and Cookies Socks END
-
-// Short Unicorn Socks START
-var shortUnicorn = {
+}, {
   html_id: "shortUnicorn",
   html_class:"shortsock",
   name: "Short Unicorn Socks",
@@ -80,24 +69,97 @@ var shortUnicorn = {
   price: 8.00,
   picture_url: "http://cdn.shopify.com/s/files/1/0205/2636/products/unicorn-socks_1024x1024.jpg?v=1394151008",
   selling_points: ["Height: Short", "Material: 100% Polyester", "Print/Color: Rainbows. Cupcakes. Unicorns. Lollipops. Opulence at it's finest."],
-};
-
-// Short Unicorn Socks END
-
-// Short Peace Out Socks START
-
-var shortPeaceOut = {
+}, {
   html_id: "shortPeaceOut",
   html_class:"shortsock",
   name: "Short Peace Out Socks",
   category: "Short Socks",
   price: 8.00,
-  // Objects are composed of KEYS and VALUES.
-  // Example:  key: "value",
-  // Keys cannot contain spaces. Think of them like variables.
   picture_url: "http://cdn.shopify.com/s/files/1/0205/2636/products/peace-out-ankle-socks-3_1024x1024.jpg?v=1452700187",
   selling_points: ["Height: Short", "Material: 100% Polyester", "Print/Color: Peace out of this world with glow in the dark tie-dye socks."],
-};
+}];
+
+// Tall Galaxy Food Cat Socks START
+// var tallGalaxyFoodCat = {
+//   html_id: "tallGalaxyFoodCat",
+//   html_class: "tallsock",
+//   name: "Tall Galaxy Food Cat Socks",
+//   category: "Tall Socks",
+//   price: 15.00,
+//   picture_url: "http://cdn.shopify.com/s/files/1/0205/2636/products/galaxy-kitty-fast-food-knee-high-socks-2_1024x1024.jpg?v=1452551292",
+//   selling_points: ["Height: Tall", "Material: 100% Polyester", "Print/Color: Features amazing cats eating fastfood in space!"],
+// };
+
+// Tall Galaxy Food Cat Socks END
+
+// Tall Bacon Socks START
+// var tallBacon = {
+//   html_id: "tallBacon",
+//   html_class: "tallsock",
+//   name: "Tall Bacon Socks",
+//   category: "Tall Socks",
+//   price: 15.00,
+//   picture_url: "http://cdn.shopify.com/s/files/1/0205/2636/products/bacon-knee-high-socks-3_1024x1024.jpg?v=1406667275",
+//   selling_points: ["Height: Tall", "Material: 100% Polyester", "Print/Color: It's bacon! Need we say more?"]
+// };
+
+
+// Tall Bacon Socks END
+
+// Tall Pink Emoji Socks START
+// var tallPinkEmoji = {
+//   html_id: "tallPinkEmoji",
+//   html_class: "tallsock",
+//   name: "Tall Pink Emoji Socks",
+//   category: "Tall Socks",
+//   price: 15.00,
+//   picture_url: "http://cdn.shopify.com/s/files/1/0205/2636/products/girly-emoji-knee-high-socks-3_1024x1024.jpg?v=1452536560",
+//   selling_points: ["Height: Tall", "Material: 100% Polyester", "Print/Color: Like pink? Like emojis? Like cats? You'll like these socks."]
+// };
+
+// Tall Pink Emoji Socks END
+
+
+// Short Milk and Cookies Socks START
+// var shortMilkAndCookies = {
+//   html_id: "shortMilkAndCookies",
+//   html_class: "shortsock",
+//   name: "Short Milk and Cookies Socks",
+//   category: "Short Socks",
+//   price: 8.00,
+//   picture_url: "http://cdn.shopify.com/s/files/1/0205/2636/products/milk-and-cookies-ankle-socks-1_1024x1024.jpg?v=1421693418",
+//   selling_points: ["Height: Short", "Material: 100% Polyester", "Print/Color: Features a milk and cookies print - suitable even for the lactose intolerant among us!"],
+// };
+
+// Short Milk and Cookies Socks END
+
+// Short Unicorn Socks START
+// var shortUnicorn = {
+//   html_id: "shortUnicorn",
+//   html_class:"shortsock",
+//   name: "Short Unicorn Socks",
+//   category: "Short Socks",
+//   price: 8.00,
+//   picture_url: "http://cdn.shopify.com/s/files/1/0205/2636/products/unicorn-socks_1024x1024.jpg?v=1394151008",
+//   selling_points: ["Height: Short", "Material: 100% Polyester", "Print/Color: Rainbows. Cupcakes. Unicorns. Lollipops. Opulence at it's finest."],
+// };
+
+// Short Unicorn Socks END
+
+// Short Peace Out Socks START
+
+// var shortPeaceOut = {
+//   html_id: "shortPeaceOut",
+//   html_class:"shortsock",
+//   name: "Short Peace Out Socks",
+//   category: "Short Socks",
+//   price: 8.00,
+//   // Objects are composed of KEYS and VALUES.
+//   // Example:  key: "value",
+//   // Keys cannot contain spaces. Think of them like variables.
+//   picture_url: "http://cdn.shopify.com/s/files/1/0205/2636/products/peace-out-ankle-socks-3_1024x1024.jpg?v=1452700187",
+//   selling_points: ["Height: Short", "Material: 100% Polyester", "Print/Color: Peace out of this world with glow in the dark tie-dye socks."],
+// };
 
 // Short Peace Out Socks END
 
@@ -123,12 +185,22 @@ $( "#shortSockButton" ).click(function(event) {
 */
 // EVENT HANLDING STARTS
 // Load everything
-addToPage(tallGalaxyFoodCat);
-addToPage(tallBacon);
-addToPage(tallPinkEmoji);
-addToPage(shortMilkAndCookies);
-addToPage(shortUnicorn);
-addToPage(shortPeaceOut);
+
+function populatePage(array) {
+    for (var i = 0; i < array.length; i++) {
+        addToPage(array[i]);
+    }
+}
+
+populatePage(tallSocksArray);
+populatePage(shortSocksArray);
+
+// addToPage(tallGalaxyFoodCat);
+// addToPage(tallBacon);
+// addToPage(tallPinkEmoji);
+// addToPage(shortMilkAndCookies);
+// addToPage(shortUnicorn);
+// addToPage(shortPeaceOut);
 $(".shortsock").hide();
 $(".tallsock").hide();
 
@@ -182,6 +254,31 @@ $(".shortsock").show();
 $(".tallsock").show();
 
 });
+
 // All Sock Event ENDS
+
+// Search listener and handler
+
+$('#searchButton').click(function() {
+    var searchString = $('#searchInput').val().toLowerCase();
+    console.log(searchString);
+
+    function searchKeyword(array) {
+        $(".shortsock").hide();
+        $(".tallsock").hide();
+        for (var i = 0; i < array.length; i++) {
+            console.log(!!array[i].name.toLowerCase().match(searchString));
+            if (!!array[i].name.toLowerCase().match(searchString)) {
+                console.log(array[i]);
+                //addToPage(array[i]);
+                $('#' + array[i].html_id).show();
+            }
+        }
+    }
+
+    searchArray = tallSocksArray.concat(shortSocksArray);
+    searchKeyword(searchArray);
+});
+
 
 // EVENT HANDLING ENDS
