@@ -16,8 +16,8 @@ body {
   /* Background texture from transparenttextures.com */
  /* Background color from uigradients.com */
   background-color: #C9FFBF; /* fallback for old browsers */
-  background: url("http://www.transparenttextures.com/patterns/arches.png"), -webkit-linear-gradient(to left, #C9FFBF , #FFAFBD); /* Chrome 10-25, Safari 5.1-6 */
-  background: url("http://www.transparenttextures.com/patterns/arches.png"), linear-gradient(to left, #C9FFBF , #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: url("//www.transparenttextures.com/patterns/arches.png"), -webkit-linear-gradient(to left, #C9FFBF , #FFAFBD); /* Chrome 10-25, Safari 5.1-6 */
+  background: url("//www.transparenttextures.com/patterns/arches.png"), linear-gradient(to left, #C9FFBF , #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
 /* Sticky Footer Styling END */
@@ -39,7 +39,7 @@ body {
 }
 
 .product .selling_points ul{
-  list-style-image: url(http://img-cache.cdn.gaiaonline.com/76bd5c99d8f2236e9d3672510e933fdf/http://i278.photobucket.com/albums/kk81/d3m3nt3dpr3p/Tiny-Star-Icon.png);
+  list-style-image: url(img-cache.cdn.gaiaonline.com/76bd5c99d8f2236e9d3672510e933fdf/http://i278.photobucket.com/albums/kk81/d3m3nt3dpr3p/Tiny-Star-Icon.png);
 }
 
 .product .picture img{
